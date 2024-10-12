@@ -1,4 +1,4 @@
-import { Menu } from '@/components/Menu/Menu'
+import { Menu } from '../components/Menu/menu'
 import styles from './layout.module.css'
 
 export const metadata = {
