@@ -1,5 +1,5 @@
-// app/layout.tsx
-import { ReactNode } from 'react';
+'use client';
+import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FaHome, FaSearch, FaSignInAlt, FaInfoCircle } from 'react-icons/fa';
 import styles from './layout.module.css';
@@ -9,6 +9,12 @@ interface LayoutProps {
 }
 
 export default function RootLayout({ children }: LayoutProps) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <html lang="pt-BR">
       <body className={styles.container}>
@@ -28,7 +34,10 @@ export default function RootLayout({ children }: LayoutProps) {
             </Link>
           </nav>
         </header>
-        <main className={styles.content}>{children}</main>
+        <main className={styles.content}>
+          {isClient ? children : null}
+        </main>
+        <footer className={styles.footer}>Rodapé</footer>
       </body>
     </html>
   );
