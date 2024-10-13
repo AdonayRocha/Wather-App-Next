@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #0070f3;
+    padding: 1em;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 2em;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
