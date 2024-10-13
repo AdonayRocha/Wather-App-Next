@@ -20,7 +20,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className={styles.container}>
         <header className={styles.header}>
           <nav className={styles.nav}>
-            <Link href="/" className={styles.link}>
+            <Link href="" className={styles.link}>
               <FaHome /> Home
             </Link>
             <Link href="/search" className={styles.link}>
@@ -37,7 +37,6 @@ export default function RootLayout({ children }: LayoutProps) {
         <main className={styles.content}>
           {isClient ? children : null}
         </main>
-        <footer className={styles.footer}>Rodapé</footer>
       </body>
     </html>
   );
