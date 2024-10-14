@@ -33,12 +33,6 @@
     padding: 2em;
 }
 
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
 
 @media (max-width: 768px) {
     .nav {
@@ -54,5 +48,9 @@
 
     .link span {
         display: none;
+    }
+
+    .header {
+        border-radius: 0 0 30px 30px;
     }
 }
