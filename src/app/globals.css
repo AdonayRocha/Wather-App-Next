@@ -2,13 +2,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #ffffff;
+  --foreground: #808080;
+  --layout-color: #0070f3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1b1a1a;
-    --foreground: #ededed;
+    --foreground: #d3d3d3;
+    --layout-color: #0070f3;
   }
 }
 
@@ -24,7 +26,6 @@ body {
   font-family: 'Roboto', Arial, sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 * {
@@ -36,6 +37,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+header, nav {
+  background-color: var(--layout-color);
 }
 
 @media (prefers-color-scheme: dark) {
