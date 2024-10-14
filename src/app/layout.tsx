@@ -1,9 +1,9 @@
 'use client'
 
-import './globals.css'; 
-import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { FaHome, FaSearch, FaSignInAlt, FaInfoCircle } from 'react-icons/fa';
+import { ReactNode, useEffect, useState } from 'react';
+import { FaHome, FaSearch, FaSignInAlt, FaStar, FaUser } from 'react-icons/fa';
+import './globals.css';
 import styles from './layout.module.css';
 
 interface LayoutProps {
@@ -28,16 +28,19 @@ export default function RootLayout({ children }: LayoutProps) {
         <header className={styles.header}>
           <nav className={styles.nav}>
             <Link href="/home" className={styles.link}>
-              <FaHome /> Home
+              <FaHome /><span> Home</span>
+            </Link>
+            <Link href="/profile" className={styles.link}>
+              <FaUser /><span> Profile</span>
             </Link>
             <Link href="/search" className={styles.link}>
-              <FaSearch /> Search
+              <FaSearch /><span> Search</span>
+            </Link>
+            <Link href="/favorites" className={styles.link}>
+              <FaStar /><span> Favorites</span>
             </Link>
             <Link href="/login" className={styles.link}>
-              <FaSignInAlt /> Login
-            </Link>
-            <Link href="/about" className={styles.link}>
-              <FaInfoCircle /> Sobre
+              <FaSignInAlt /><span> Login</span>
             </Link>
           </nav>
         </header>
