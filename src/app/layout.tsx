@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { ReactNode, useEffect, useState } from 'react';
-import { FaHome, FaSearch, FaSignInAlt, FaStar, FaUser } from 'react-icons/fa';
+import { BiHeart, BiHomeAlt, BiSearch, BiUserCircle } from 'react-icons/bi';
 import './globals.css';
 import styles from './layout.module.css';
 
@@ -28,16 +28,16 @@ export default function RootLayout({ children }: LayoutProps) {
         <header className={styles.header}>
           <nav className={styles.nav}>
             <Link href="/home" className={styles.link}>
-              <FaHome /><span> Home</span>
+              <BiHomeAlt /><span> Home</span>
             </Link>
             <Link href="/profile" className={styles.link}>
-              <FaUser /><span> Profile</span>
+              <BiUserCircle /><span> Profile</span>
             </Link>
             <Link href="/search" className={styles.link}>
-              <FaSearch /><span> Search</span>
+              <BiSearch /><span> Search</span>
             </Link>
             <Link href="/favorites" className={styles.link}>
-              <FaStar /><span> Favorites</span>
+              <BiHeart /><span> Favorites</span>
             </Link>
           </nav>
         </header>
