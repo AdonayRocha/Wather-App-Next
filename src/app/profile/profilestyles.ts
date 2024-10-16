@@ -32,10 +32,10 @@ export const Value = styled.p`
 `;
 
 export const Button = styled.button`
-    background-color: var(--layout-color);
+    background-color: #808080;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 80px;
     padding: 0.5em 1em;
     cursor: pointer;
     font-size: 1rem;
