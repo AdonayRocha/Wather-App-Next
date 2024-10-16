@@ -30,14 +30,14 @@ export default function RootLayout({ children }: LayoutProps) {
             <Link href="/home" className={styles.link}>
               <BiHomeAlt /><span> Home</span>
             </Link>
-            <Link href="/profile" className={styles.link}>
-              <BiUserCircle /><span> Profile</span>
-            </Link>
             <Link href="/search" className={styles.link}>
               <BiSearch /><span> Search</span>
             </Link>
             <Link href="/favorites" className={styles.link}>
               <BiHeart /><span> Favorites</span>
+            </Link>
+            <Link href="/profile" className={styles.link}>
+              <BiUserCircle /><span> Profile</span>
             </Link>
           </nav>
         </header>

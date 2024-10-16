@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button, Label, LoginContainer, Section, Title, Input } from './loginstyles';
+import { useState } from 'react';
+import { Button, Input, Label, LoginContainer, Section, Title } from './login.styles';
 
 export default function LoginPage() {
     const [email, setEmail] = useState('');
@@ -10,7 +10,7 @@ export default function LoginPage() {
     const router = useRouter();
 
     const handleLogin = () => {
-        router.push('/home'); 
+        router.push('/home');
     };
 
     const handleCancel = () => {

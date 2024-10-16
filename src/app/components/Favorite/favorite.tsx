@@ -1,6 +1,6 @@
 'use client';
 
-import { FavoritesContainer, Item, Title } from './favoritestyles';
+import { FavoritesContainer, Item, Title } from './favorite.styles';
 
 interface FavoritesProps {
     items: string[];

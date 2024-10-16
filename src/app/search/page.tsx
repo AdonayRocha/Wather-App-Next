@@ -1,8 +1,8 @@
-"use client";  
+"use client";
 
+import Search from '../components/Search/search';
 import Layout from '../layout';
-import Search from '../components/Search/search'; 
-import { Title, CenteredContainer } from './searchstyles'; 
+import { CenteredContainer, Title } from './search.styles';
 
 export default function YourPage() {
     return (
