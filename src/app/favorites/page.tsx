@@ -1,17 +1,14 @@
 'use client';
 
+import Favorites from '../components/Favorite/favorite';
 import Layout from '../layout';
-import { FavoritesContainer, Item, Title } from './favoritesstyles';
 
 export default function FavoritesPage() {
+    const favoriteItems = ['Exemplo 1', 'Exemplo 2', 'Exemplo 3'];
+
     return (
         <Layout>
-            <FavoritesContainer>
-                <Title>Favoritos</Title>
-                <Item>Exemplo 1</Item>
-                <Item>Exemplo 2</Item>
-                <Item>Exemplo 3</Item>
-            </FavoritesContainer>
+            <Favorites items={favoriteItems} />
         </Layout>
     );
 }
