@@ -26,14 +26,13 @@ export const Input = styled.input`
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: #0070f3;
+    background-color: #808080;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
     width: 100%;
-    transition: background-color 0.3s;
 
     &:hover {
         background-color: #005bb5;
