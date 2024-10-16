@@ -93,6 +93,7 @@ export default function HomePage() {
                                         <span>{dateFormat(item.data)} </span>
                                         <span>Min: {item.min}&#176;C </span>
                                         <span>Max: {item.max}&#176;C</span>
+                                        <span>{item.condicao} </span>
                                     </div>
                                 ))}
                         </div>
