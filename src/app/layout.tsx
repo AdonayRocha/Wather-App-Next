@@ -39,9 +39,6 @@ export default function RootLayout({ children }: LayoutProps) {
             <Link href="/favorites" className={styles.link}>
               <FaStar /><span> Favorites</span>
             </Link>
-            <Link href="/login" className={styles.link}>
-              <FaSignInAlt /><span> Login</span>
-            </Link>
           </nav>
         </header>
         <main className={styles.content}>
