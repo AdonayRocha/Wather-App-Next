@@ -14,7 +14,7 @@ export default function LoginPage() {
     };
 
     const handleCancel = () => {
-        router.back();
+        router.push('/login');
     };
 
     return (
