@@ -1,6 +1,6 @@
 'use client';
 
-import Layout from '../../layout';
+import Layout from '../layout';
 import { FavoritesContainer, Item, Title } from './favoritesstyles';
 
 export default function FavoritesPage() {

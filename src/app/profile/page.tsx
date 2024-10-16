@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '../../layout';
+import Layout from '../layout';
 import { Button, Label, ProfileContainer, Section, Title, Value } from './profilestyles';
 
 export default function ProfilePage() {
